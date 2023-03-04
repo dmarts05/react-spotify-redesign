@@ -6,8 +6,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {},
+      height: {
+        screen: ['100vh /* fallback for Opera, IE and etc. */', '100dvh'],
+        'screen-small': [
+          '100vh /* fallback for Opera, IE and etc. */',
+          '100svh',
+        ],
+        'screen-large': [
+          '100vh /* fallback for Opera, IE and etc. */',
+          '100lvh',
+        ],
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        varela: ['Varela Round', 'sans-serif'],
       },
     },
     screens: {
